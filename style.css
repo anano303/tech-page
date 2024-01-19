@@ -3,12 +3,16 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "League Spartan", sans-serif;
-  font-family: "Manrope", sans-serif;
-  font-family: "Montserrat", sans-serif;
+  font-family: "League Spartan", "Manrope", "Montserrat", sans-serif;
+
   overflow-x: hidden;
 }
+/* img,
+video {
+  max-width: 100%;
+} */
 .body-container,
 .body-container2 {
   padding: 21px 120px 30px 91px;
@@ -461,4 +465,56 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    /* overflow-x: scroll; */
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(#060307, #090a26);
+  }
+  .body-container2 {
+    padding: -21px -120px -30px -91px;
+  }
+  header {
+    gap: 0px;
+  }
+  .sign-in {
+    position: relative;
+    top: 100%;
+    right: 20%;
+  }
+
+  .card {
+    padding: 0px;
+  }
+  .svg1 {
+    left: -13%;
+    top: 250px;
+  }
+
+  .svg2 {
+    left: 105%;
+    top: -250px;
+  }
+  .girl {
+    margin-top: 60px;
+    padding-right: 20px;
+  }
+  .section5 {
+    margin-top: 60%;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .line1,
+  .line2 {
+    overflow-x: hidden;
+  }
 }
