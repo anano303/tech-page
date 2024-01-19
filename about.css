@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-image-about {
+  background-image: url(Images/cyberpunk-neon-girl_1565054393\ 4.jpg);
+  background-size: cover;
+}
+
+.p-about {
+  color: #fff;
+
+  /* monts body/body 1 */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.9px; /* 216.111% */
+  width: 465px;
+  text-align: start;
+}
+.learn-about {
+  background-color: blueviolet;
+}
+
+.main-about {
+  align-items: flex-start;
+  padding-left: 45%;
+}
+section > p {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 130px;
+  margin-bottom: 90px;
+}
+
+.second-img-about {
+  background-image: url(Images/image.png);
+  background-size: cover;
+  position: absolute;
+  right: 5px;
+  left: 0px;
+  width: 100%;
+  padding-left: 120px;
+
+  padding-top: 87px;
+  padding-bottom: 87px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+.second-img-about > p {
+  color: #fff;
+  max-width: 465px;
+  /* monts body/body 1 */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.9px; /* 216.111% */
+}
+.footer-about {
+  margin-top: 67%;
+}
