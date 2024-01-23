@@ -511,7 +511,7 @@ ul {
   main {
     margin: 20px;
   }
-  
+
   .body-container2 {
     padding: 20px;
   }
@@ -528,9 +528,9 @@ ul {
   }
   .images {
     display: grid;
-    grid-template-columns:  auto; 
-     gap: 10px;
-  } 
+    grid-template-columns: auto;
+    gap: 10px;
+  }
   .body-container,
   .body-container2,
   .line {
@@ -549,7 +549,7 @@ ul {
     font-size: 40px;
     width: 100%;
   }
- 
+
   .bg-image {
     background-repeat: no-repeat;
   }
@@ -578,4 +578,4 @@ ul {
   .footer-index {
     padding-top: 30px;
   }
-
+}
