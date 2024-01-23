@@ -17,8 +17,6 @@ body {
 
 .p-about {
   color: #fff;
-
-  /* monts body/body 1 */
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -47,14 +45,11 @@ section > p {
   margin-top: 130px;
   margin-bottom: 90px;
 }
-
 .second-img-about {
   background-image: url(Images/image.png);
   background-size: cover;
-  position: absolute;
-  right: 5px;
-  left: 0px;
-  width: 100%;
+}
+.second-img-text {
   padding-left: 120px;
 
   padding-top: 87px;
@@ -65,7 +60,10 @@ section > p {
   align-items: flex-start;
   gap: 50px;
 }
-.second-img-about > p {
+.section-p {
+  margin-left: 60px;
+}
+.second-img-text > p {
   color: #fff;
   max-width: 465px;
   /* monts body/body 1 */
@@ -75,6 +73,27 @@ section > p {
   font-weight: 400;
   line-height: 38.9px; /* 216.111% */
 }
-.footer-about {
-  margin-top: 67%;
+
+@media only screen and (max-width: 900px) {
+  .p-about {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .p-about {
+    text-align: center;
+    width: 100%;
+  }
+  .main-about {
+    align-items: center;
+    padding-left: 5%;
+  }
+  .second-img-text {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .second-img-text p {
+    text-align: center;
+  }
 }
