@@ -6,13 +6,8 @@
 
 body {
   font-family: "League Spartan", "Manrope", "Montserrat", sans-serif;
-
-  /* overflow-x: hidden; */
 }
-/* img,
-video {
-  max-width: 100%;
-} */
+
 .body-container,
 .body-container2 {
   padding: 21px 120px 30px 91px;
@@ -48,6 +43,7 @@ nav {
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: center;
 }
 a {
   text-decoration: none;
@@ -258,6 +254,16 @@ h1 {
   padding: 68px 55px 93px 62px;
   margin-right: 2px;
 }
+.card2 {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  border: 3px solid #e15cf2;
+  align-items: center;
+  padding: 60px 47px 85px 55px;
+  margin-right: 2px;
+  overflow-x: hidden;
+}
 .p3 {
   color: #fff;
   text-align: center;
@@ -324,10 +330,15 @@ h2 {
   left: -8%;
   top: 360px;
 } */
-/* .cont2 {
-  gap: 50px;
-} */
+.cont2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .section4 {
+  padding-top: 87px;
+  background-color: #090a26;
   display: flex;
   flex-direction: column;
   gap: 90px;
@@ -336,9 +347,9 @@ h2 {
 .bg-image2 {
   background-image: url(Images/girl\ photo.jpg);
   background-size: cover;
-  position: absolute;
-  right: 2px;
-  left: 0px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .girl {
   padding-left: 70%;
@@ -368,6 +379,9 @@ h2 {
   border: none;
   display: flex;
   align-items: center;
+}
+.body-cont3 {
+  background-color: #090a26;
 }
 
 .images {
@@ -445,26 +459,21 @@ ul {
 .footer-index {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -230px;
+  /* margin-bottom: -230px; */
 }
+
 .sub {
   display: flex;
   justify-content: space-between;
-}
-.line1,
-.line2 {
-  position: relative;
-  width: 1800px;
-  height: 1px;
-  background-color: #502356;
-  right: 8.5%;
-}
-.line1 {
-  top: -200px;
+  background-color: #090a26;
+  padding: 21px 120px 30px 91px;
 }
 
-.line2 {
-  top: 100px;
+.line {
+  border-top: 1px solid #502356;
+  border-bottom: 1px solid #502356;
+  background-color: #090a26;
+  padding: 40px 120px 50px 91px;
 }
 .footer {
   display: flex;
@@ -482,55 +491,91 @@ ul {
   line-height: normal;
 }
 
+@media only screen and (max-width: 600px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 1400px) {
   body {
-    overflow-x: scroll;
-    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(#060307, #090a26);
   }
+  main {
+    margin: 20px;
+  }
+  
   .body-container2 {
-    padding: -21px -120px -30px -91px;
+    padding: 20px;
   }
-  header {
-    gap: 0px;
+  header > nav,
+  .icons {
+    flex-wrap: wrap;
   }
-  .sign-in {
-    position: relative;
-    top: 100%;
-    right: 20%;
+  .container1,
+  .cont2 {
+    flex-direction: column;
+  }
+  .container1 {
+    gap: 20px;
+  }
+  .images {
+    display: grid;
+    grid-template-columns:  auto; 
+     gap: 10px;
+  } 
+  .body-container,
+  .body-container2,
+  .line {
+    padding: 5px 40px 7px 20px;
+  }
+  .discover-btn,
+  .learn-btn {
+    width: 140px;
+    height: 48px;
   }
 
   .card {
-    padding: 0px;
+    padding: 10px 0px;
+  }
+  h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+ 
+  .bg-image {
+    background-repeat: no-repeat;
   }
 
-  .svg1 {
-    /* left: -13%;
-    top: 250px; */
+  .sign-in {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 5px;
   }
-
-  /* .svg2 {
-    left: 105%;
-    top: -250px;
-  } */
+  .d-flex-jus {
+    flex-direction: column;
+    margin: 20px;
+  }
+  a {
+    font-size: 12px;
+  }
   .girl {
-    margin-top: 60px;
-    padding-right: 20px;
+    padding-left: 30px;
   }
-  .section5 {
-    margin-top: 60%;
+  .btn4 {
+    color: white;
+  }
+  .p5 {
+    width: 150px;
+  }
+  .footer-index {
+    padding-top: 30px;
   }
 
-  .images {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-  }
-  .line1,
-  .line2 {
-    overflow-x: hidden;
-  }
-}
