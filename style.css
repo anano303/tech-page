@@ -7,7 +7,7 @@
 body {
   font-family: "League Spartan", "Manrope", "Montserrat", sans-serif;
 
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /* img,
 video {
@@ -296,7 +296,20 @@ h2 {
 .img5 {
   margin-bottom: 8px;
 }
-
+.d-flex-jus {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px -90px;
+  margin-top: 100px;
+}
+.svg1,
+.svg2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 
 .svg1,
 .svg2 {
   display: flex;
@@ -310,7 +323,7 @@ h2 {
 .svg1 {
   left: -8%;
   top: 360px;
-}
+} */
 /* .cont2 {
   gap: 50px;
 } */
@@ -319,17 +332,19 @@ h2 {
   flex-direction: column;
   gap: 90px;
 }
-.girl {
+
+.bg-image2 {
   background-image: url(Images/girl\ photo.jpg);
   background-size: cover;
   position: absolute;
-  right: 5px;
+  right: 2px;
   left: 0px;
-  width: 100%;
+}
+.girl {
   padding-left: 70%;
   padding-right: 120px;
-  padding-top: 87px;
-  padding-bottom: 87px;
+  margin-top: 87px;
+  margin-bottom: 87px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -469,7 +484,7 @@ ul {
 
 @media only screen and (max-width: 1400px) {
   body {
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
     /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
@@ -491,15 +506,16 @@ ul {
   .card {
     padding: 0px;
   }
+
   .svg1 {
-    left: -13%;
-    top: 250px;
+    /* left: -13%;
+    top: 250px; */
   }
 
-  .svg2 {
+  /* .svg2 {
     left: 105%;
     top: -250px;
-  }
+  } */
   .girl {
     margin-top: 60px;
     padding-right: 20px;
