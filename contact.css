@@ -65,12 +65,17 @@ textarea {
   height: 180px;
   margin-bottom: 25px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   form {
     width: 300px;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 350px) {
+  form {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 900px) {
   form {
     width: 400px;
   }
