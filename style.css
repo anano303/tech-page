@@ -494,7 +494,10 @@ ul {
 .none {
   display: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 870px) {
+  .logo img {
+    width: 120px;
+  }
   header nav {
     display: none;
   }
