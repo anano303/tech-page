@@ -19,6 +19,12 @@ body {
   flex-direction: column;
   gap: 130px;
 }
+.logo:hover {
+  cursor: pointer;
+}
+.logo > a:hover {
+  animation: none;
+}
 .bg-image {
   background-image: url(Images/woman\ photo.jpg);
   background-size: cover;
@@ -493,6 +499,10 @@ ul {
 }
 .none {
   display: none;
+}
+.none:hover {
+  cursor: pointer;
+  color: #502356;
 }
 @media only screen and (max-width: 870px) {
   .logo img {
